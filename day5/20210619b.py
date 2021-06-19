@@ -16,7 +16,6 @@ source: codesignal.com (Lambda Challenge)
 
 '''
 
-
 def csAverageOfTopFive(scores):
     scores_dict = {}
     for score in scores:  # O(n)
