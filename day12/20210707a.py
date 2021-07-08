@@ -69,3 +69,10 @@ my_ll.append(5)
 
 
 print(my_ll)
+
+'''
+Reference Article for Building a Linked List in Python
+
+https://qvault.io/python/building-a-linked-list-in-python-with-examples/
+
+'''
