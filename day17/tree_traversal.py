@@ -65,7 +65,7 @@ pre_order_traversal(root)
 
 #Post-Order Traversal using Recursive Approach
 '''
-Pre-Order Traversal involves recursively traversing the left subtree, then 
+Post-Order Traversal involves recursively traversing the left subtree, then 
 traversing the right subtree and finally visiting the root
 
 '''

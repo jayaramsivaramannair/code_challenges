@@ -80,7 +80,7 @@ def treePaths(t):
             return []
         path.append(root.value)
 
-        #This will occur only when we have reached the left
+        #This will occur only when we have reached the leaf
         string_representation = ""
         if root.left is None and root.right is None:
             for i in range(len(path) - 1):

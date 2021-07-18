@@ -105,6 +105,7 @@ def checkBalanced(node):
     right_depth, right_balance = checkBalanced(node.right)
     
     # Returns a tuple consisting of an integer and a boolean value
+    # integer contained within this tuple represents depth of the tree
     return (max(left_depth, right_depth) + 1, left_balance and right_balance and abs(left_depth - right_depth) <= 1)
 
 def balancedBinaryTree(root):

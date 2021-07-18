@@ -13,7 +13,7 @@ mergeTwoLinkedLists(l1, l2) = [1, 2, 3, 4, 5, 6];
 For l1 = [1, 1, 2, 4] and l2 = [0, 3, 5], the output should be
 mergeTwoLinkedLists(l1, l2) = [0, 1, 1, 2, 3, 4, 5].
 
-source: codewars.com (Lambda Challenge)
+source: codesignal.com (Lambda Challenge)
 '''
 
 # This creates a new node in the list
