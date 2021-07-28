@@ -37,6 +37,8 @@ source: codesignal.com (Lambda Challenge)
 '''
 
 
+'''
+
 def dfs(friendships, v):
     if friendships[v][v] == 0:
         return 0
@@ -61,7 +63,30 @@ def csFriendCircles(friendships):
 
     return friends_circle
 
+'''
 
+def dft(current_friend, friendships, visited):
+    # add current node to visited
+    visited.add(current_friend)
+
+    # recurse on neighbors we have not see yet
+    for friend_index, has_friendship in enumerate(friendships[current_friend]):
+        if has_friendship == 1 and friend_index not in visited:
+            dft(friend_index, friendships, visited)
+
+
+
+def csFriendCircles(friendships):
+    num_circles = 0
+    visited = set()
+
+    for friend in range(len(friendships)):
+        if friend not in visited:
+            dft(friend, friendships, visited)
+            num_circles += 1
+
+
+    return num_circles
 
 friendships_1 = [
     [1,1,0],
