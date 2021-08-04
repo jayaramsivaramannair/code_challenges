@@ -28,8 +28,16 @@ stringA = 'aba'
 n = 10
 
 def repeatedString(s, n):
-    # In the solution below, the part after addition symbol takes care of the case where the n is not evenly divisible by length of the provided string
-    return (s.count('a') * n // len(s)) + (s[:n % len(s)].count('a'))
+    # In the solution below, the part after else clause takes care of the case where the n is not evenly divisible by length of the provided string
+    count_a = 0
+    count_a += (s.count('a') * (n // len(s)))
+
+    if len(s) > n:
+        count_a += s[:n].count('a')
+    else:
+        count_a += s[:n% len(s)].count('a')
+
+    return count_a
 
 print(repeatedString(stringA, n))
 print(repeatedString('abcac', 10))
