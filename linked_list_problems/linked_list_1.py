@@ -32,6 +32,58 @@ Returns:
 source: Interview Preparation on Hackerrank.com (Linked Lists)
 '''
 
+#class for SinglyLinkedListNode
+class SinglyLinkedListNode:
+    def __init__(self, data=None, next=None):
+        self.data = data
+        self.next = next
+
+# class for the LinkedList Itself
+class LinkedList:
+    def __init__(self, head=None):
+        self.head = head
+
+    def append(self, data):
+        new_node = SinglyLinkedListNode(data)
+
+        # Checks if a reference to a head was passed because reference to head is needed for traversal
+        if self.head:
+            current = self.head
+
+            # while current.head is pointing to another element in the list
+            while current.next:
+                current = current.next
+
+            current.next = new_node
+        else:
+            # If no reference to a head was passed. It means that the new node itself is the head.
+            self.head = new_node
+
+    # The below will enable us to iterate over element of the linked list using for _ in _ syntax
+    def __iter__(self):
+        node = self.head
+        while node is not None:
+            yield node
+            node = node.next
+
+    # The below will enable us to call the print() method directly on the linked list
+    def __repr__(self):
+        nodes = []
+        for node in self:
+            nodes.append(str(node.data))
+        return " -> ".join(nodes)
+
+
+# Creating a new node for the linked list
+a = SinglyLinkedListNode(16)
+
+# Initializing an instance of the Linked List Class and providing a was a reference for head of the linked list
+my_ll = LinkedList(a)
+my_ll.append(13)
+my_ll.append(7)
+print("Before Insertion of the New Node")
+print(my_ll)
+
 def insertNodeAtPosition(llist, data, position):
     # Write your code here
     if position == 0:
@@ -51,3 +103,8 @@ def insertNodeAtPosition(llist, data, position):
     
     #The original head remains unchanged
     return llist
+
+insertNodeAtPosition(a, 1, 2)
+
+print("After Insertion of the New Node")
+print(my_ll)
