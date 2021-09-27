@@ -17,11 +17,7 @@ source: The Coding Interview Bootcamp: Algorithms + Data Structures
 
 function reverseInt(n) {
   let n_string = n.toString();
-  if(n_string[0] === '-') {
-    return parseInt(n_string[0] + n_string.slice(1).split('').reverse().join(''))
-  } 
-
-  return parseInt(n_string.split('').reverse().join(''))
+  return parseInt(n_string.split('').reverse().join('')) * Math.sign(n);
 }
 
 console.log(reverseInt(15))
