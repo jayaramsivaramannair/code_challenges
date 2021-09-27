@@ -32,13 +32,17 @@ Returns:
 source: Interview Preparation on Hackerrank.com (Linked Lists)
 '''
 
-#class for SinglyLinkedListNode
+# class for SinglyLinkedListNode
+
+
 class SinglyLinkedListNode:
     def __init__(self, data=None, next=None):
         self.data = data
         self.next = next
 
 # class for the LinkedList Itself
+
+
 class LinkedList:
     def __init__(self, head=None):
         self.head = head
@@ -84,6 +88,7 @@ my_ll.append(7)
 print("Before Insertion of the New Node")
 print(my_ll)
 
+
 def insertNodeAtPosition(llist, data, position):
     # Write your code here
     if position == 0:
@@ -91,18 +96,19 @@ def insertNodeAtPosition(llist, data, position):
         new_node.next = llist
         # Return the new head
         return new_node
-        
+
     current_node = llist
     # Iterate through until the desired position
     for i in range(position - 1):
         current_node = current_node.next
-        
+
     new_node = SinglyLinkedListNode(data)
     new_node.next = current_node.next
     current_node.next = new_node
-    
-    #The original head remains unchanged
+
+    # The original head remains unchanged
     return llist
+
 
 insertNodeAtPosition(a, 1, 2)
 
