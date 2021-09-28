@@ -14,3 +14,11 @@ Considering the possibility that these interview questions can come up again in 
 ### Hash Table Problems
 
 - [common_character_in_string](./string_problems/bootcamp_4.js)
+
+### Hard To Fit Into A Category Problems
+
+- [classic_fizzbuzz_challenge](./assorted_problems/bootcamp_5.js)
+
+### Array Problems
+
+- [divide_array_into_sub-array](./array_problems/bootcamp_6.js)
