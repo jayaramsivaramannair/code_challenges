@@ -10,6 +10,7 @@ Considering the possibility that these interview questions can come up again in 
 - [string_reversal](./string_problems/bootcamp_1.js)
 - [palindrome_check](./string_problems/bootcamp_2.js)
 - [integer_reversal](./string_problems/bootcamp_3.js)
+- [anagram_check](./string_problems/bootcamp_7.js)
 
 ### Hash Table Problems
 
