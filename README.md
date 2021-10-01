@@ -11,6 +11,7 @@ Considering the possibility that these interview questions can come up again in 
 - [palindrome_check](./string_problems/bootcamp_2.js)
 - [integer_reversal](./string_problems/bootcamp_3.js)
 - [anagram_check](./string_problems/bootcamp_7.js)
+- [capitalize_first_letter](./string_problems/bootcamp_8.js)
 
 ### Hash Table Problems
 
