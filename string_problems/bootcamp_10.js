@@ -22,6 +22,7 @@ source: The Coding Interview Bootcamp: Algorithms + Data Structures
 */
 
 function pyramid(n) {
+  //Number of columns is determined by multiplying n by 2 and deducting '1' from the result
   const midpoint = Math.floor((2 * n - 1) / 2);
 
   for(let row = 0; row < n; row++) {

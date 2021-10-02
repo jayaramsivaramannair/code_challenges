@@ -14,6 +14,7 @@ Considering the possibility that these interview questions can come up again in 
 - [capitalize_first_letter](./string_problems/bootcamp_8.js)
 - [print_steps_using_hashes](./string_problems/bootcamp_9.js)
 - [make_a_pyramid](./string_problems/bootcamp_10.js)
+- [find_vowels](./string_problems/bootcamp_11.js)
 
 ### Hash Table Problems
 
