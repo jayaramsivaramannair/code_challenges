@@ -27,3 +27,4 @@ Considering the possibility that these interview questions can come up again in 
 ### Array Problems
 
 - [divide_array_into_sub-array](./array_problems/bootcamp_6.js)
+- [create_spiral_matrix](./array_problems/bootcamp_12.js)
