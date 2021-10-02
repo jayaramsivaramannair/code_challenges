@@ -13,6 +13,7 @@ Considering the possibility that these interview questions can come up again in 
 - [anagram_check](./string_problems/bootcamp_7.js)
 - [capitalize_first_letter](./string_problems/bootcamp_8.js)
 - [print_steps_using_hashes](./string_problems/bootcamp_9.js)
+- [make_a_pyramid](./string_problems/bootcamp_10.js)
 
 ### Hash Table Problems
 
