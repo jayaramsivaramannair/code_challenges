@@ -13,6 +13,7 @@ fib(4) === 3
 
 source: The Coding Interview Bootcamp: Algorithms + Data Structures
 */
+/* Iterative Approach
 
 function fib(n) {
   let series = []
@@ -26,6 +27,19 @@ function fib(n) {
   }
   return series[n];
 }
+*/
+
+
+//Recursive Approach
+/*
+function fib(n) {
+  if(n < 2) {
+    return n;
+  }
+
+  return fib(n - 1) + fib(n - 2)
+}
+*/
 
 console.log(fib(4))
 console.log(fib(5))
