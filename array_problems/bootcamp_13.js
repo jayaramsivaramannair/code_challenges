@@ -41,6 +41,37 @@ function fib(n) {
 }
 */
 
+//Memoization Approach
+
+function memoize(fn) {
+  const cache = {};
+
+  //Function takes a variable number of arguments
+  return function(...args) {
+    if(cache[args]) {
+      return cache[args];
+    }
+
+    const result = fn.apply(this, args);
+
+    cache[args] = result;
+
+    return result;
+  }
+}
+
+
+function slowFib(n) {
+  if(n < 2) {
+    return n;
+  }
+
+  return fib(n - 1) + fib(n - 2)
+
+}
+
+const fib = memoize(slowFib);
+
 console.log(fib(4))
 console.log(fib(5))
 console.log(fib(6))
