@@ -8,6 +8,7 @@ Examples
 - q.add(1)
 - q.remove() -> returns 1;
 
+source: The Coding Interview Bootcamp: Algorithms + Data Structures
 */
 
 class Queue {

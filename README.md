@@ -34,3 +34,7 @@ Considering the possibility that these interview questions can come up again in 
 
 - [simple_queue_in_JavaScript](./stacks_queues_problems/bootcamp_14.js)
 - [weaving_queues](./stacks_queues_problems/bootcamp_15.js)
+
+### Stack Data Structure
+
+- [simple_stack_in_JavaScript](./stacks_queues_problems/bootcamp_16.js)
