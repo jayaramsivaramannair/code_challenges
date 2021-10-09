@@ -113,20 +113,44 @@ class LinkedList {
     this.head = old_head.next
 
   }
+
+  removeLast() {
+    
+    //Check if a head node exists or not
+    if(!this.head) {
+      return 
+    }
+
+    //If the list contains only one node
+    if(this.size() === 1) {
+      this.head = null
+      return
+    }
+
+    let current_node = this.head
+    let previous_node = null
+
+    while(current_node.next) {
+      previous_node = current_node
+      current_node = current_node.next
+    }
+
+    previous_node.next = null
+  }
 }
 
 const new_list = new LinkedList()
 console.log(new_list.head)
 
 new_list.insertFirst(10)
-
 new_list.insertFirst(12)
 
-new_list.insertFirst(14)
-
-const list_b = new LinkedList()
 console.log(new_list.size())
+console.log(new_list.getFirst())
+console.log(new_list.getLast())
 
-console.log(new_list.getFirst())
-new_list.removeFirst()
-console.log(new_list.getFirst())
+new_list.removeLast()
+
+console.log(new_list.size())
+console.log(new_list.getLast())
+
