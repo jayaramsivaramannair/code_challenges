@@ -25,7 +25,7 @@ class Queue {
   }
 
   peek() {
-    return this.data
+    return this.data[this.data.length - 1]
   }
 }
 
@@ -34,6 +34,6 @@ q.add(1)
 q.add(5)
 q.add(7)
 q.add(10)
-q.remove()
+console.log(q.remove())
 
 console.log(q.peek())

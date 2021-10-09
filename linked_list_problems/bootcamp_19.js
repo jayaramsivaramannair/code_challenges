@@ -44,3 +44,55 @@ list.getFirst(); // Returns Node instance with data 'a'
 
 source: The Coding Interview Bootcamp: Algorithms + Data Structures
 */
+
+class Node {
+  constructor(record, nextNode = null) {
+    this.data = record
+    this.next = nextNode
+  }
+}
+
+class LinkedList {
+  constructor() {
+    this.head = null
+  }
+
+  insertFirst(data) {
+    //Get a reference to the current head node in the list
+    let old_head = this.head
+
+    //Create a new node
+    let new_node = new Node(data, old_head)
+
+    //Make the new node to become the new head
+    this.head = new_node
+  }
+
+  size() {
+    let nodes = 0
+
+    let current_node = this.head
+    while(current_node) {
+      nodes += 1
+      current_node = current_node.next
+    }
+
+    return nodes
+  }
+}
+
+const new_list = new LinkedList()
+console.log(new_list.head)
+
+new_list.insertFirst(10)
+console.log(new_list.head)
+
+new_list.insertFirst(12)
+console.log(new_list.head)
+
+new_list.insertFirst(14)
+console.log(new_list.head)
+
+const list_b = new LinkedList()
+console.log(list_b.size())
+console.log(new_list.size())

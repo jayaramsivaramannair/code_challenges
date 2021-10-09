@@ -39,3 +39,8 @@ Considering the possibility that these interview questions can come up again in 
 
 - [simple_stack_in_JavaScript](./stacks_queues_problems/bootcamp_16.js)
 - [Queue_Implementation_Using_Stacks](./stacks_queues_problems/bootcamp_17.js)
+
+### Linked List Data Structure
+
+- [linked_list_node](./linked_list_problems/bootcamp_18.js)
+- [linked_list_implementation](./linked_list_problems/bootcamp_19.js)
