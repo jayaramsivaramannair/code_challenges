@@ -164,15 +164,44 @@ class LinkedList {
     //This will be reached only if index is invalid
     return null
   }
+
+  removeAt(index) {
+    let target_node = this.getAt(index)
+    let previous_node = this.getAt(index- 1)
+
+    //If the list is empty
+    if(!target_node && !previous_node) {
+      return
+    }
+
+    //if the target_node is head node
+    if(!previous_node) {
+      this.head = this.head.next
+      return 
+    }
+
+    if(target_node && previous_node) {
+      previous_node.next = target_node.next
+      return 
+    }
+  }
 }
+
+
 
 const new_list = new LinkedList()
 console.log(new_list.head)
 
-console.log(new_list.size())
-console.log(new_list.getAt(0))
+
 
 new_list.insertLast(10)
-new_list.insertLast(12)
-console.log(new_list.getAt(0))
+new_list.insertLast(20)
+new_list.insertLast(40)
+new_list.insertLast(50)
+
+console.log(new_list.size())
+
+console.log(new_list.removeAt(2))
+console.log(new_list.size())
+console.log(new_list.getFirst())
 
