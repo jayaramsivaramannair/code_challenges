@@ -79,20 +79,21 @@ class LinkedList {
 
     return nodes
   }
+
+  getFirst() {
+    return this.head
+  }
 }
 
 const new_list = new LinkedList()
 console.log(new_list.head)
 
 new_list.insertFirst(10)
-console.log(new_list.head)
 
 new_list.insertFirst(12)
-console.log(new_list.head)
 
 new_list.insertFirst(14)
-console.log(new_list.head)
 
 const list_b = new LinkedList()
-console.log(list_b.size())
 console.log(new_list.size())
+console.log(new_list.getFirst())
