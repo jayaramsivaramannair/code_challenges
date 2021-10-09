@@ -185,6 +185,28 @@ class LinkedList {
       return 
     }
   }
+
+  insertAt(data, index) {
+    //If the index is out of bounds or if the index points to the tail
+    if(index < 0 || index > this.size() - 1) {
+      this.insertLast(data)
+      return
+    }
+
+    let previous_node = this.getAt(index - 1)
+    let new_node = new Node(data)
+
+    //Insert at head or when the list is empty
+    if(!previous_node) {
+      new_node.next = this.head
+      this.head = new_node
+      return
+    }
+    
+    new_node.next = previous_node.next
+    previous_node.next = new_node
+    return 
+  }
 }
 
 
@@ -193,15 +215,12 @@ const new_list = new LinkedList()
 console.log(new_list.head)
 
 
-
-new_list.insertLast(10)
-new_list.insertLast(20)
-new_list.insertLast(40)
-new_list.insertLast(50)
-
 console.log(new_list.size())
-
-console.log(new_list.removeAt(2))
+new_list.insertAt(60,2)
 console.log(new_list.size())
 console.log(new_list.getFirst())
+console.log(new_list.getLast())
+
+
+
 
