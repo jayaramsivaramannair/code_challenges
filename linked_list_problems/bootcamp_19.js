@@ -210,15 +210,25 @@ class LinkedList {
 }
 
 
-
+//Creates a new instance of a linked list
 const new_list = new LinkedList()
+
+
+//Returns head of the list
 console.log(new_list.head)
 
 
+//Returns the number of nodes in the list
 console.log(new_list.size())
+
+//Insert a new node at the provided index
 new_list.insertAt(60,2)
 console.log(new_list.size())
+
+//Returns first node in the list
 console.log(new_list.getFirst())
+
+//Returns last node in the list
 console.log(new_list.getLast())
 
 

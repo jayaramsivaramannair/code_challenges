@@ -42,5 +42,5 @@ Considering the possibility that these interview questions can come up again in 
 
 ### Linked List Data Structure
 
-- [linked_list_node](./linked_list_problems/bootcamp_18.js)
-- [linked_list_implementation](./linked_list_problems/bootcamp_19.js)
+- [singly_linked_list_node](./linked_list_problems/bootcamp_18.js)
+- [singly_linked_list_implementation](./linked_list_problems/bootcamp_19.js)
