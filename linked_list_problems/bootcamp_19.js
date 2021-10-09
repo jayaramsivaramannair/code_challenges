@@ -101,6 +101,18 @@ class LinkedList {
   clear() {
     this.head = null
   }
+
+  removeFirst() {
+
+    //Check if a head node exists or not
+    if(!this.head) {
+      return
+    }
+
+    let old_head = this.head
+    this.head = old_head.next
+
+  }
 }
 
 const new_list = new LinkedList()
@@ -114,8 +126,7 @@ new_list.insertFirst(14)
 
 const list_b = new LinkedList()
 console.log(new_list.size())
-console.log(new_list.getFirst())
-console.log(new_list.getLast())
 
-new_list.clear()
+console.log(new_list.getFirst())
+new_list.removeFirst()
 console.log(new_list.getFirst())
