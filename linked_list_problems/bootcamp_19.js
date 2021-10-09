@@ -148,17 +148,31 @@ class LinkedList {
       this.head = new Node(data)
     }
   }
+
+  getAt(index) {
+    let counter = 0
+    let current_node = this.head
+
+
+    while(current_node) {
+        if(counter === index) {
+          return current_node
+        }
+        counter += 1
+        current_node = current_node.next
+    }
+    //This will be reached only if index is invalid
+    return null
+  }
 }
 
 const new_list = new LinkedList()
 console.log(new_list.head)
 
 console.log(new_list.size())
+console.log(new_list.getAt(0))
 
 new_list.insertLast(10)
 new_list.insertLast(12)
-
-console.log(new_list.size())
-console.log(new_list.getFirst())
-console.log(new_list.getLast())
+console.log(new_list.getAt(0))
 
