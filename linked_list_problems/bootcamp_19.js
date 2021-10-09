@@ -137,20 +137,28 @@ class LinkedList {
 
     previous_node.next = null
   }
+
+  insertLast(data) {
+
+    let last_node = this.getLast()
+    //Check if the list is currently empty or not
+    if (last_node) {
+      last_node.next = new Node(data)
+    } else {
+      this.head = new Node(data)
+    }
+  }
 }
 
 const new_list = new LinkedList()
 console.log(new_list.head)
 
-new_list.insertFirst(10)
-new_list.insertFirst(12)
+console.log(new_list.size())
+
+new_list.insertLast(10)
+new_list.insertLast(12)
 
 console.log(new_list.size())
 console.log(new_list.getFirst())
-console.log(new_list.getLast())
-
-new_list.removeLast()
-
-console.log(new_list.size())
 console.log(new_list.getLast())
 
