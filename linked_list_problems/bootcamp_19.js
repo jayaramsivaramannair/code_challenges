@@ -97,6 +97,10 @@ class LinkedList {
 
     return current_node
   }
+
+  clear() {
+    this.head = null
+  }
 }
 
 const new_list = new LinkedList()
@@ -112,4 +116,6 @@ const list_b = new LinkedList()
 console.log(new_list.size())
 console.log(new_list.getFirst())
 console.log(new_list.getLast())
-console.log(list_b.getLast())
+
+new_list.clear()
+console.log(new_list.getFirst())
