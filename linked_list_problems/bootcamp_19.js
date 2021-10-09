@@ -83,6 +83,20 @@ class LinkedList {
   getFirst() {
     return this.head
   }
+
+  getLast() {
+    let current_node = this.head
+
+    if(!current_node) {
+      return null
+    }
+
+    while(current_node.next) {
+      current_node = current_node.next
+    }
+
+    return current_node
+  }
 }
 
 const new_list = new LinkedList()
@@ -97,3 +111,5 @@ new_list.insertFirst(14)
 const list_b = new LinkedList()
 console.log(new_list.size())
 console.log(new_list.getFirst())
+console.log(new_list.getLast())
+console.log(list_b.getLast())
