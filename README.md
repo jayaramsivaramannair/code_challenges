@@ -44,3 +44,4 @@ Considering the possibility that these interview questions can come up again in 
 
 - [singly_linked_list_node](./linked_list_problems/bootcamp_18.js)
 - [singly_linked_list_implementation](./linked_list_problems/bootcamp_19.js)
+- [middle_point_in_linkedList](./linked_list_problems/bootcamp_20.js)
