@@ -53,3 +53,4 @@ Considering the possibility that these interview questions can come up again in 
 - [node_and_tree_implementation](./tree_problems/bootcamp_23.js)
 - [breadth_first_traversal](./tree_problems/bootcamp_24.js)
 - [depth_first_traversal](./tree_problems/bootcamp_25.js)
+- [tree_level_width](./tree_problems/bootcamp_26.js)
