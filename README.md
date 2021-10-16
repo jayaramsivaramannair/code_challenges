@@ -60,3 +60,4 @@ Considering the possibility that these interview questions can come up again in 
 ### Sorting Algorithms
 
 - [Bubble_Sort](./sorting_problems/bootcamp_29.js)
+- [Selection_Sort](./sorting_problems/bootcamp_30.js)
