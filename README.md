@@ -48,6 +48,7 @@ Considering the possibility that these interview questions can come up again in 
 - [circular_lists](./linked_list_problems/bootcamp_21.js)
 - [n_nodes_from_last](./linked_list_problems/bootcamp_22.js)
 - [reversal_doubly_linked_list_hackerrank](./linked_list_problems/bootcamp_33.js)
+- [node_insertion_sorted_doubly_linked_list](./linked_list_problems/bootcamp_34.js)
 
 ### Tree Data Structure
 
