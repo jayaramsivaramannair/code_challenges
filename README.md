@@ -50,6 +50,7 @@ Considering the possibility that these interview questions can come up again in 
 - [reversal_doubly_linked_list_hackerrank](./linked_list_problems/bootcamp_33.js)
 - [node_insertion_sorted_doubly_linked_list_hackerrank](./linked_list_problems/bootcamp_34.js)
 - [merge_point_two_lists_hackerrank](./linked_list_problems/bootcamp_35.js)
+- [Detect A Cycle - Hackerrank](./linked_list_problems/bootcamp_36.js)
 
 ### Tree Data Structure
 
