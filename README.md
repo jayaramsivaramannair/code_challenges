@@ -19,6 +19,7 @@ Considering the possibility that these interview questions can come up again in 
 ### Hash Table Problems
 
 - [common_character_in_string](./string_problems/bootcamp_4.js)
+- [ice_cream_parlor_hackerrank](./hashtable_problems/bootcamp_37.js)
 
 ### Hard To Fit Into A Category Problems
 
