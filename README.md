@@ -69,3 +69,7 @@ Considering the possibility that these interview questions can come up again in 
 - [Bubble_Sort](./sorting_problems/bootcamp_29.js)
 - [Selection_Sort](./sorting_problems/bootcamp_30.js)
 - [Merge_Sort](./sorting_problems/bootcamp_31.js)
+
+### Search Algorithms
+
+- [Minimum_Time_Required](./array_problems/bootcamp_40.js)
