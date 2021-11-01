@@ -16,6 +16,7 @@ Considering the possibility that these interview questions can come up again in 
 - [make_a_pyramid](./string_problems/bootcamp_10.js)
 - [find_vowels](./string_problems/bootcamp_11.js)
 - [Sherlock_and_Valid_String_hackerrank](./string_problems/bootcamp_42.js)
+- [Common_Child_hackerrank](./string_problems/bootcamp_43.js)
 
 ### Hash Table Problems
 
