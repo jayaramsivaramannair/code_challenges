@@ -35,6 +35,7 @@ Considering the possibility that these interview questions can come up again in 
 - [create_spiral_matrix](./array_problems/bootcamp_12.js)
 - [generating_fibonacci_series](./array_problems/bootcamp_13.js)
 - [unique_triplets_hackerrank](./array_problems/bootcamp_39.js)
+- [minimum_number_of_candies_hackerrank](./array_problems/bootcamp_44.js)
 
 ### Queue Data Structure
 
