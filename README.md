@@ -2,6 +2,7 @@
 
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/jayaramsivaramannair/code_challenges?style=for-the-badge)
 ![GitHub last commit](https://img.shields.io/github/last-commit/jayaramsivaramannair/code_challenges)
+![Lines of code](https://img.shields.io/tokei/lines/github/jayaramsivaramannair/code_challenges?style=for-the-badge)
 
 This repository contains all the daily problems I have solved to strengthen my understanding of algorithms and data structures.
 
